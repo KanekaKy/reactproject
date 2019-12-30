@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container, Form, Button, Modal } from 'react-bootstrap';
+import { Jumbotron as Jumbo, Container, Form, Button, Modal, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import cover from '../assets/cover.jpeg';
 
@@ -29,13 +29,19 @@ const Styles = styled.div`
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
-      <div className="overlay"></div>
       <Container>
+      <div className="overlay"></div>
+        <Row className="justify-content-md-center">
+          <Col sm md={{ span: 7 }}>
         <h1>Welcome to DevMeet!</h1>
         <h4>Quickly Connect with Developers & Ask Questions</h4>
+        </Col>
+        <Col sm md={{ offset: 2}}>
         <Button variant="primary">Sign Up</Button>
         <Button variant="info">Log in</Button>
-      </Container>
+        </Col>
+        </Row>
+        </Container>
     </Jumbo>
   </Styles>
 )

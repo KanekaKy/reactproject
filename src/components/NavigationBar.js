@@ -42,7 +42,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar  bg="dark" variant="dark">
+    <Navbar  sticky="top" bg="dark" variant="dark">
       <Navbar.Brand href="#home">DevMeet</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Item >
@@ -64,7 +64,7 @@ export const NavigationBar = () => (
         </NavDropdown>
         <Nav.Item>
           <Nav.Link>
-            <Link to="/about">Contact</Link>
+            <Link to="/Feedback">Feedback</Link>
           </Nav.Link>
         </Nav.Item>
       </Nav>
