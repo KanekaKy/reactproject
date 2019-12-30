@@ -1,8 +1,9 @@
 import React from 'react'
-import { Form, Button, Col, Row } from 'react-bootstrap';
+import { Form, Button, Col } from 'react-bootstrap';
 
 export const Feedback = () => (
   <Form>
+    <h2> Do You have Feedback? </h2>
   <Form.Group>
   <Form.Row>
     <Col>
@@ -14,15 +15,15 @@ export const Feedback = () => (
   </Form.Row>
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label>Email address</Form.Label>
+    <Form.Label>Email address: </Form.Label>
     <Form.Control type="email" placeholder="name@example.com" />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlInput3">
-    <Form.Label>Phone Numner</Form.Label>
+    <Form.Label>Phone Number: </Form.Label>
     <Form.Control type="email" placeholder="0123456" />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlSelect5">
-    <Form.Label>Rate Our page (1-5)</Form.Label>
+    <Form.Label>Rate Our Site (1-5):</Form.Label>
     <Form.Control as="select">
       <option>1</option>
       <option>2</option>
@@ -32,7 +33,7 @@ export const Feedback = () => (
     </Form.Control>
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Comment</Form.Label>
+    <Form.Label>Comment:</Form.Label>
     <Form.Control as="textarea" rows="5" />
   </Form.Group>
   <Button variant="primary" type="submit">

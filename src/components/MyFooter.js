@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Image, Card, Row, Col} from 'react-bootstrap';
+import { Card, Row, Col} from 'react-bootstrap';
 import styled from 'styled-components';
 
 
@@ -56,7 +56,6 @@ export const MyFooter = () => (
           <h4> Contact:</h4>
           <p> Email: DevMeet@gmail.com</p>
           <p> Tel: +90-3231231231</p>
-          <br />
           <p> Address: 111 W. Charleston </p> 
           <p> Box 564, Disneyland USA </p>
           </Col>

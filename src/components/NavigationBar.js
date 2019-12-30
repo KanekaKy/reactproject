@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 
 const Styles = styled.div`
 *{
-  font-family: 'lato';
+  font-family: Gill, Helvetica, sans-serif;
+  font-weight: bolder;
   list-style: none;
   text-decoration: none;
 }
@@ -38,7 +39,6 @@ const Styles = styled.div`
     }
   }
 `;
-
 
 export const NavigationBar = () => (
   <Styles>
